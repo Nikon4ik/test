@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/profile.min.css">
+    <title>Profile</title>
+</head>
+<body>
+    <div class="profile">
+        <div class="container">
+            <h4 class="h4">Profile</h4>
+            <nav class="profile__navigation p2">
+                <a href="#" class="active">Registration</a>
+                <a href="#">Sign in</a>
+            </nav>
+            <div class="profile__social p3">
+                <div class="profile__social-text">You can sign in with social</div>
+                <div class="profile__social-link">
+                    <a href="#">
+                        <picture><source srcset="./img/icons/vk.svg" type="image/webp"><img src="./img/icons/vk.svg" alt="vk"></picture>
+                    </a>
+                    <a href="#">
+                        <picture><source srcset="./img/icons/facebook.svg" type="image/webp"><img src="./img/icons/facebook.svg" alt="facebook"></picture>
+                    </a>
+                    <a href="#">
+                        <picture><source srcset="./img/icons/google.svg" type="image/webp"><img src="./img/icons/google.svg" alt="google"></picture>
+                    </a>
+                </div>
+            </div>
+            <form class="profile__form p2" onsubmit="Validate(event)" novalidate>
+                <div class="profile__inputs">
+                    <div class="first_element">
+                        <label for="userName" class="p2">Your name</label>
+                        <input type="text" name="userName" id="userName" autocomplete="off">
+                    </div>
+                    <div class="second_element">
+                        <label for="email" class="p2">E-mail</label>
+                        <input type="email" name="email" id="email" autocomplete="off">
+                    </div>
+                    <div class="third_element">
+                        <label for="phone-mask" class="p2">Phone</label>
+                        <input type="tel" name="phone" id="phone-mask" autocomplete="off">
+                    </div>
+                </div>
+                <div class="profile__privacy-policy">
+                    <input type="checkbox" id="privacy-policy">
+                    <div>
+                        <label for="privacy-policy">
+                            I accept the terms of the offer of
+                        </label>
+                        <a href="">the privacy policy</a>
+                    </div>
+                </div>
+                <div class="profile__buttons">
+                    <button>Registration</button>
+                    <a href="#">Sign in</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./js/script-profile.min.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script>
+        var phoneMask = IMask(
+            document.getElementById('phone-mask'), {
+                mask: '+{38}(000)000-00-00'
+            }
+        );
+    </script>
+</body>
+</html>
