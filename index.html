@@ -1,1 +1,177 @@
-<!DOCTYPE html><html lang="en"><head>    <meta charset="UTF-8">    <meta http-equiv="X-UA-Compatible" content="IE=edge">    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="stylesheet" href="css/style.min.css">    <title>Document</title></head><body>    <header class="header">        <div class="container">            <div class="header__logo h5">                Logo            </div>            <div class="header__burger" onclick="OpenMenu(event)">                <span></span>            </div>            <div class="header__menu">                <nav class="header__navigation p2">                    <a href="#">Free test</a>                    <a href="#" class="active">Catalog</a>                    <a href="#">Help</a>                </nav>                <div class="header__profile p2">                    <a href="/profile">Michael Browk</a>                    <div class="header__avatar">                        🦁                    </div>                </div>            </div>        </div>    </header>    <main class="main">        <div class="container">            <div class="main__text">                <h3 class="h3">Course catalog</h3>                <p class="p2">                    Each course contains video lectures, tasks, and text materials. All courses viewed by you are displayed in your personal account                </p>            </div>            <div class="main__search p2">                <input type="text" placeholder="Search" />                <div class="select-box">    <div class="select-box__current" onclick="Current(event)">        <p class="p3">Your country</p>        <div class="select-box__value">            <input class="select-box__input" type="radio" id="0" value="1" name="country"/>            <p class="select-box__input-text">Ukraine</p>        </div>        <div class="select-box__value">            <input class="select-box__input" type="radio" id="1" value="2" name="country"/>            <p class="select-box__input-text">USA</p>        </div>        <div class="select-box__value">            <input class="select-box__input" type="radio" id="2" value="3" name="country"/>            <p class="select-box__input-text">Poland</p>        </div>        <div class="select-box__value">            <input class="select-box__input" type="radio" id="3" value="4" name="country"/>            <p class="select-box__input-text">United Kingdom</p>        </div>        <button onclick="Remove(event)">            <picture><source srcset="./img/icons/close.svg" type="image/webp"><img class="select-box__close-button" src="./img/icons/close.svg" alt="close"></picture>        </button>        <picture><source srcset="./img/icons/arrow-down.svg" type="image/webp"><img class="select-box__icon" src="./img/icons/arrow-down.svg" alt="arrow"></picture>    </div>    <ul class="select-box__list">        <li class="select-box__item" onclick="Select(event)">            <label class="select-box__option" for="0">Ukraine</label>        </li>        <li class="select-box__item" onclick="Select(event)">            <label class="select-box__option" for="1">USA</label>        </li>        <li class="select-box__item" onclick="Select(event)">            <label class="select-box__option" for="2">Poland</label>        </li>        <li class="select-box__item" onclick="Select(event)">            <label class="select-box__option" for="3">United Kingdom</label>        </li>    </ul></div>            </div>            <div class="main__items p2">                <div class="main__item col-1-3">                    <div class="main__item-body">                        <p>Progress 12%</p>                        <div class="main__item-user">                            <div class="first-avatar"></div>                            <span>Alexa</span>                        </div>                        <h6 class="h6">Take exam in Mathematics at 100 points</h6>                        <div class="main__item-description">                            <div>                                <picture><source srcset="./img/icons/student.svg" type="image/webp"><img src="./img/icons/student.svg" alt="student"></picture>                                <span>12 lessons</span>                            </div>                            <div>                                <picture><source srcset="./img/icons/pen.svg" type="image/webp"><img src="./img/icons/pen.svg" alt="pen"></picture>                                <span>12 tasks</span>                            </div>                            <div>                                <picture><source srcset="./img/icons/video.svg" type="image/webp"><img src="./img/icons/video.svg" alt="video"></picture>                                <span>30 minutes</span>                            </div>                        </div>                    </div>                    <div class="main__item-buttons">                        <a href="#">Continue</a>                        <a href="#">More</a>                    </div>                    <div class="first-background"></div>                </div>                <div class="main__item col-1-3">                    <div class="main__item-body">                        <p>Progress 12%</p>                        <div class="main__item-user">                            <div class="second-avatar"></div>                            <span>Kathryn Nguyen</span>                        </div>                        <h6 class="h6">How buy new clothes without money in USA</h6>                        <div class="main__item-description">                            <div>                                <picture><source srcset="./img/icons/student.svg" type="image/webp"><img src="./img/icons/student.svg" alt="student"></picture>                                <span>12 lessons</span>                            </div>                            <div>                                <picture><source srcset="./img/icons/pen.svg" type="image/webp"><img src="./img/icons/pen.svg" alt="pen"></picture>                                <span>12 tasks</span>                            </div>                            <div>                                <picture><source srcset="./img/icons/video.svg" type="image/webp"><img src="./img/icons/video.svg" alt="video"></picture>                                <span>30 minutes</span>                            </div>                        </div>                    </div>                    <div class="main__item-buttons">                        <a href="#">Continue</a>                        <a href="#">More</a>                    </div>                    <div class="second-background"></div>                </div>                <div class="main__item col-1-3">                    <div class="main__item-body">                        <p>Progress 12%</p>                        <div class="main__item-user">                            <div class="third-avatar"></div>                            <span>Diane Miles</span>                        </div>                        <h6 class="h6">Why people hate me?</h6>                        <div class="main__item-description">                            <div>                                <picture><source srcset="./img/icons/student.svg" type="image/webp"><img src="./img/icons/student.svg" alt="student"></picture>                                <span>12 lessons</span>                            </div>                            <div>                                <picture><source srcset="./img/icons/pen.svg" type="image/webp"><img src="./img/icons/pen.svg" alt="pen"></picture>                                <span>12 tasks</span>                            </div>                            <div>                                <picture><source srcset="./img/icons/video.svg" type="image/webp"><img src="./img/icons/video.svg" alt="video"></picture>                                <span>30 minutes</span>                            </div>                        </div>                    </div>                    <div class="main__item-buttons">                        <a href="#">Continue</a>                        <a href="#">More</a>                    </div>                    <div class="third-background"></div>                </div>            </div>        </div>    </main>    <script src="./js/script.min.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__logo h5">
+                Logo
+            </div>
+            <div class="header__burger" onclick="OpenMenu(event)">
+                <span></span>
+            </div>
+            <div class="header__menu">
+                <nav class="header__navigation p2">
+                    <a href="#">Free test</a>
+                    <a href="#" class="active">Catalog</a>
+                    <a href="#">Help</a>
+                </nav>
+                <div class="header__profile p2">
+                    <a href="./profile">Michael Browk</a>
+                    <div class="header__avatar">
+                        🦁
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="main__text">
+                <h3 class="h3">Course catalog</h3>
+                <p class="p2">
+                    Each course contains video lectures, tasks, and text materials. All courses viewed by you are displayed in your personal account
+                </p>
+            </div>
+            <div class="main__search p2">
+                <input type="text" placeholder="Search" />
+                <div class="select-box">
+    <div class="select-box__current" onclick="Current(event)">
+        <p class="p3">Your country</p>
+        <div class="select-box__value">
+            <input class="select-box__input" type="radio" id="0" value="1" name="country"/>
+            <p class="select-box__input-text">Ukraine</p>
+        </div>
+        <div class="select-box__value">
+            <input class="select-box__input" type="radio" id="1" value="2" name="country"/>
+            <p class="select-box__input-text">USA</p>
+        </div>
+        <div class="select-box__value">
+            <input class="select-box__input" type="radio" id="2" value="3" name="country"/>
+            <p class="select-box__input-text">Poland</p>
+        </div>
+        <div class="select-box__value">
+            <input class="select-box__input" type="radio" id="3" value="4" name="country"/>
+            <p class="select-box__input-text">United Kingdom</p>
+        </div>
+        <button onclick="Remove(event)">
+            <picture><source srcset="./img/icons/close.svg" type="image/webp"><img class="select-box__close-button" src="./img/icons/close.svg" alt="close"></picture>
+        </button>
+        <picture><source srcset="./img/icons/arrow-down.svg" type="image/webp"><img class="select-box__icon" src="./img/icons/arrow-down.svg" alt="arrow"></picture>
+    </div>
+    <ul class="select-box__list">
+        <li class="select-box__item" onclick="Select(event)">
+            <label class="select-box__option" for="0">Ukraine</label>
+        </li>
+        <li class="select-box__item" onclick="Select(event)">
+            <label class="select-box__option" for="1">USA</label>
+        </li>
+        <li class="select-box__item" onclick="Select(event)">
+            <label class="select-box__option" for="2">Poland</label>
+        </li>
+        <li class="select-box__item" onclick="Select(event)">
+            <label class="select-box__option" for="3">United Kingdom</label>
+        </li>
+    </ul>
+</div>
+            </div>
+            <div class="main__items p2">
+                <div class="main__item col-1-3">
+                    <div class="main__item-body">
+                        <p>Progress 12%</p>
+                        <div class="main__item-user">
+                            <div class="first-avatar"></div>
+                            <span>Alexa</span>
+                        </div>
+                        <h6 class="h6">Take exam in Mathematics at 100 points</h6>
+                        <div class="main__item-description">
+                            <div>
+                                <picture><source srcset="./img/icons/student.svg" type="image/webp"><img src="./img/icons/student.svg" alt="student"></picture>
+                                <span>12 lessons</span>
+                            </div>
+                            <div>
+                                <picture><source srcset="./img/icons/pen.svg" type="image/webp"><img src="./img/icons/pen.svg" alt="pen"></picture>
+                                <span>12 tasks</span>
+                            </div>
+                            <div>
+                                <picture><source srcset="./img/icons/video.svg" type="image/webp"><img src="./img/icons/video.svg" alt="video"></picture>
+                                <span>30 minutes</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__item-buttons">
+                        <a href="#">Continue</a>
+                        <a href="#">More</a>
+                    </div>
+                    <div class="first-background"></div>
+                </div>
+                <div class="main__item col-1-3">
+                    <div class="main__item-body">
+                        <p>Progress 12%</p>
+                        <div class="main__item-user">
+                            <div class="second-avatar"></div>
+                            <span>Kathryn Nguyen</span>
+                        </div>
+                        <h6 class="h6">How buy new clothes without money in USA</h6>
+                        <div class="main__item-description">
+                            <div>
+                                <picture><source srcset="./img/icons/student.svg" type="image/webp"><img src="./img/icons/student.svg" alt="student"></picture>
+                                <span>12 lessons</span>
+                            </div>
+                            <div>
+                                <picture><source srcset="./img/icons/pen.svg" type="image/webp"><img src="./img/icons/pen.svg" alt="pen"></picture>
+                                <span>12 tasks</span>
+                            </div>
+                            <div>
+                                <picture><source srcset="./img/icons/video.svg" type="image/webp"><img src="./img/icons/video.svg" alt="video"></picture>
+                                <span>30 minutes</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__item-buttons">
+                        <a href="#">Continue</a>
+                        <a href="#">More</a>
+                    </div>
+                    <div class="second-background"></div>
+                </div>
+                <div class="main__item col-1-3">
+                    <div class="main__item-body">
+                        <p>Progress 12%</p>
+                        <div class="main__item-user">
+                            <div class="third-avatar"></div>
+                            <span>Diane Miles</span>
+                        </div>
+                        <h6 class="h6">Why people hate me?</h6>
+                        <div class="main__item-description">
+                            <div>
+                                <picture><source srcset="./img/icons/student.svg" type="image/webp"><img src="./img/icons/student.svg" alt="student"></picture>
+                                <span>12 lessons</span>
+                            </div>
+                            <div>
+                                <picture><source srcset="./img/icons/pen.svg" type="image/webp"><img src="./img/icons/pen.svg" alt="pen"></picture>
+                                <span>12 tasks</span>
+                            </div>
+                            <div>
+                                <picture><source srcset="./img/icons/video.svg" type="image/webp"><img src="./img/icons/video.svg" alt="video"></picture>
+                                <span>30 minutes</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__item-buttons">
+                        <a href="#">Continue</a>
+                        <a href="#">More</a>
+                    </div>
+                    <div class="third-background"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/script.min.js"></script>
+</body>
+</html>
